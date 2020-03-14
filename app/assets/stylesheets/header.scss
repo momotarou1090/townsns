@@ -1,0 +1,18 @@
+.header {
+  &__wrapper {
+    height: 60px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    &__top {
+      width: 100px;
+      margin-left: 270px;
+      &__title {
+        background-color: blue;
+        font-size: 23px;
+        font-family: fantasy;
+      }
+    }
+  }
+}
