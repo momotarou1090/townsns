@@ -1,8 +1,13 @@
 .all-wrapper
+  = form_with model: @tweet, local: true do |f|
+    = f.text_field :text, placeholder: "ツイート"
+    = f.file_field :image, class: 'image'
+    = f.submit "投稿する"
   .items-container
     .items
       -@tweets.each do |tweet|
         .item
           .item_image
-            = image_tag tweet.image.url,:size =>'500x650'
+            -if tweet.image?
+              = image_tag tweet.image.url,:size =>'500x650'
           =tweet.text
