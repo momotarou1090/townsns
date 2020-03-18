@@ -65,3 +65,6 @@ gem 'haml-rails'
 gem 'erb2haml'
 gem 'geocoder'
 gem "gmaps4rails"
+gem 'pry-rails'
+gem 'rb-readline'
+gem 'carrierwave'

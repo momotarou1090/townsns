@@ -1,0 +1,5 @@
+%h1 ツイートしろ
+= form_with model: @tweet, local: true do |f|
+  = f.text_field :text, placeholder: "ツイート"
+  = f.file_field :image, class: 'image'
+  = f.submit "投稿する"

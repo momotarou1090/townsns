@@ -5,3 +5,5 @@ successCallback = (position) ->
         # エラー処理
 
     navigator.geolocation.getCurrentPosition(successCallback,errorCallback)
+
+    #詳細https://qiita.com/hiraokashi/items/94570c1ab4ddf4c9f031

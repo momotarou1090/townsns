@@ -1,6 +1,8 @@
 .all-wrapper
   .items-container
     .items
-      .item
-      .item
-      .item
+      -@tweets.each do |tweet|
+        .item
+          .item_image
+            = image_tag tweet.image.url,:size =>'500x650'
+          =tweet.text
