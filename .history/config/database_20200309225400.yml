@@ -50,7 +50,5 @@ test:
 production:
   <<: *default
   database: townsns_production
-  username: root
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  socket: /var/lib/mysql/mysql.sock
-  
+  username: townsns
+  password: <%= ENV['TOWNSNS_DATABASE_PASSWORD'] %>
